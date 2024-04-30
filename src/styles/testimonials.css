@@ -1,0 +1,120 @@
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 91px);
+    gap: 3rem;
+}
+
+.testimonials-chef {
+    width: 500px;
+    height: auto;
+}
+
+.testimonials-content {
+    width: 50%;
+}
+
+.testimonials-title {
+    color: var(--color-primary-6);
+    font-size: 1.6rem;
+}
+
+.testimonials-subtitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.testimonials-feedbacks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feedback {
+    background-color: var(--color-neutral-0);
+    display: flex;
+    padding: 12px;
+    border-radius: 12px;
+    gap: 20px;
+    box-shadow: 0px 0px 12px 4px rgb(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.feedback > img {
+    width: 35%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.feedback-name-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feedback-name-rate > div > i {
+    color: var(--color-primary-6);
+}
+
+.testimonials-content > button {
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 1170px) {
+    #testimonials > img {
+        display: none;
+    }
+
+    #testimonials {
+        flex-direction: column;
+    }
+
+    .testimonials-content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonials-subtitle {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .testimonials-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .testimonials-content {
+        width: 100%;
+    }
+
+    .testimonials-subtitle {
+        font-size: 2rem;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .feedback > img {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feedback-name, 
+    .feedback-text {
+        font-size: .85rem;
+    }
+
+    .feedback > img {
+        width: 30%;
+    }
+}

@@ -1,0 +1,91 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-title {
+    color: var(--color-primary-6);
+    font-size: 1.6rem
+}
+
+.menu-subtitle {
+    text-align: center;
+    font-size: 2.2rem
+}
+
+.menu-options-dishes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 24px;
+}
+
+.dish {
+    background-color: var(--color-neutral-0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px rgb(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    gap: 1.1rem;
+}
+
+.dish-heart {
+    background-color: var(--color-primary-6);
+    color: var(--color-primary-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 37.5px 0px 42.5px;
+    font-size: 1.6rem;
+}
+
+.dish-description {
+    color: #434343;
+    text-align: center;
+}
+
+.dish-rate i {
+    color: var(--color-primary-6);
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.dish-price span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1170px) {
+    .menu-options-dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+}
